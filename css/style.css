@@ -4,7 +4,7 @@
    text-align: center;
 }
 .page-nav li {display:inline-block;}
-.page-nav {min-height: 75px;}
+.page-nav {min-height: clear fix;}
 
 .container{
   width: 930px;
@@ -13,7 +13,7 @@
   padding-left: 15px;
   padding-right: 15px;
   border: 1px solid #f44000;
-  min-height: 75px;
+  min-height: clear fix;
 }
 
 /*930*/
