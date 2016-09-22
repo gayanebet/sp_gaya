@@ -6,12 +6,14 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!--   <header class="page-nav">
+
+
+  <header class="page-nav">
     <div class="container">
-      <a href="" class="logo left"><img src="http://placehold.it/40x40" alt=""></a>
-      <nav class="menu right">
+      <a href="" class="logo"><img src="" alt=""><span>Спецтех24</span></a>
+      <nav class="menu">
         <ul>
-          <li><a href="">О компании</a></li>
+          <li><a href=" ">О компании</a></li>
           <li><a href="">Каталог</a></li>
           <li><a href="">Портфолио</a></li>
           <li><a href="">Контакты</a></li>
@@ -19,20 +21,20 @@
         </ul>
       </nav>
     </div>
-  </header><!--MEHЮ--> -->
+</header>
+
+<!-- ЗАчем клеарфикс снизу -->
 <div class="catalog-subheader clearfix">
   <div class="container">
-    <div class="left">
-      <h1 >Техника: эксковаторы в аренду</h1>
-      <p>Спецтех это безотказная техника, принципиально новый уровень сервиса и качества. 
+    <div class="left ">
+      <div class="catalog-subheader__title"><h1 >Техника: эксковаторы в аренду</h1></div>
+      <div class="catalog-subheader__description"><p>Спецтех это безотказная техника, принципиально новый уровень сервиса и качества. 
 Если вы искали идеальных партнеров на объект - Вы нашли их.
-Что понадобится Вам сегодня?
-  </p>
-  <!-- title, description, text, button -->
+Что понадобится Вам сегодня?</p></div>
     </div>
     <div class="right">
-      <a href="">Мне нужна консультация</a>
-      <p>Оставьте заявку, и уже сегодня мы вам перезвоним</p>
+      <div class="catalog-subheader__btn"><a href="">Мне нужна консультация</a></div>
+      <div class="catalog-subheader__text"><p>Оставьте заявку, и уже сегодня мы вам перезвоним</p></div>
     </div>
   </div>
 </div>
@@ -50,34 +52,15 @@
       </ul>
     </aside>
       <div class="catalog-list"> <!--БОТВА лист исправить титле и диф имг-->
-        <div class="catalog-item">
-          <h3 class="catalog-item__title">Колёсный эксковатор Cat M315D</h3>
-          <img src="" alt="" class="catalog-item-pic">
-          <p class="catalog-item-price">25 000 руб/месяц</p>
+
+        <div class="catalog-item"> <!-- карточка товара. Пока что одна, для проверки -->
+          <div class="catalog-item__title"><h3>Колёсный эксковатор Cat M315D</h3>
+          <div class="catalog-item__pic><img src="" alt="" ></div>
+          <div class="catalog-item__price><p class="catalog-item-price">25 000 руб/месяц</p></div>
           <a href="" class="catalog-item__btn catalog-item__btn--white">Арендовать</a>
           <a href="" class="catalog-item__btn catalog-item__btn--yellow">Купить</a>
         </div>
-        <div class="catalog-item">
-          <h3 class="catalog-item__title">Колёсный эксковатор Cat M315D</h3>
-          <img src="" alt="" class="catalog-item-pic">
-          <p class="catalog-item-price">25 000 руб/месяц</p>
-          <a href="" class="catalog-item__btn catalog-item__btn--white">Арендовать</a>
-          <a href="" class="catalog-item__btn catalog-item__btn--yellow">Купить</a>
-        </div>
-        <div class="catalog-item">
-          <h3 class="catalog-item__title">Колёсный эксковатор Cat M315D</h3>
-          <img src="" alt="" class="catalog-item-pic">
-          <p class="catalog-item-price">25 000 руб/месяц</p>
-          <a href="" class="catalog-item__btn catalog-item__btn--white">Арендовать</a>
-          <a href="" class="catalog-item__btn catalog-item__btn--yellow">Купить</a>
-        </div>
-        <div class="catalog-item">
-          <h3 class="catalog-item__title">Колёсный эксковатор Cat M315D</h3>
-          <img src="" alt="" class="catalog-item-pic">
-          <p class="catalog-item-price">25 000 руб/месяц</p>
-          <a href="" class="catalog-item__btn catalog-item__btn--white">Арендовать</a>
-          <a href="" class="catalog-item__btn catalog-item__btn--yellow">Купить</a>
-        </div>
+
       </div>
     
   </div>
@@ -85,10 +68,16 @@
 
 <div class="catalog-offers">
   <div class="container">
-    <h3>Спецпредложения</h3>
+    <div class="catalog-offers__title"><h3>Спецпредложения</h3></div>
 
-<!-- скопировать сверху 3 норм карточки -->
-
+        <div class="catalog-item"> <!-- карточка товара -->
+          <div class="catalog-item__title"><h3>Колёсный эксковатор Cat M315D</h3>
+          <div class="catalog-item__pic><img src="" alt="" ></div>
+          <div class="catalog-item__price><p class="catalog-item-price">25 000 руб/месяц</p></div>
+          <a href="" class="catalog-item__btn catalog-item__btn--white">Арендовать</a>
+          <a href="" class="catalog-item__btn catalog-item__btn--yellow">Купить</a>
+        </div>
+<!-- скопировала пока что только одну -->
  </div>
 </div>
 
