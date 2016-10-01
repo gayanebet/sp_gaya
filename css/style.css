@@ -18,10 +18,10 @@
   padding-left: 15px;
   padding-right: 15px;
   border: 1px solid #f44000;
-/*  min-height: clear fix;*/
+
 }
 
-/*930*/
+
 .subheader{
   
 }
@@ -40,4 +40,24 @@
   display: table;
   clear: both;
 }
-/*а че он не выравнивается?*/
+
+.consult-form {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  }
+
+.reviews
+{
+  display: inline-block;
+  vertical-align: top;
+}
+.about-numbers{
+  display: inline-block;
+}
+/*что за ботько*/
+.advantages-item{
+  width: 16%;
+  display: inline-block;
+  margin-left: 70px;
+}
