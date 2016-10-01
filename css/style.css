@@ -3,8 +3,13 @@
 .center{
    text-align: center;
 }
-.page-nav li {display:inline-block;}
-.page-nav {min-height: clear fix;}
+.page-nav li {
+  display:inline-block;
+}
+
+.page-nav {
+  min-height: clear fix;
+}
 
 .container{
   width: 930px;
@@ -13,7 +18,7 @@
   padding-left: 15px;
   padding-right: 15px;
   border: 1px solid #f44000;
-  min-height: clear fix;
+/*  min-height: clear fix;*/
 }
 
 /*930*/
@@ -35,3 +40,4 @@
   display: table;
   clear: both;
 }
+/*а че он не выравнивается?*/
