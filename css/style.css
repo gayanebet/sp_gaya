@@ -1,16 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+ font-family: 'PT Sans', sans-serif;
+}
 .left{float:left;}
 .right{float:right;}
 .center{
    text-align: center;
 }
-.page-nav li {
-  display:inline-block;
+
+body{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.page-nav {
-  min-height: clear fix;
+header{
+  background-color: #ffcd34;
 }
-
+footer{
+  background-color: #202e3b;
+}
 .container{
   width: 930px;
   margin-left: auto;
@@ -18,13 +28,97 @@
   padding-left: 15px;
   padding-right: 15px;
   border: 1px solid #f44000;
-
 }
 
 
-.subheader{
-  
+
+/*ИЗ ДС БИН*/
+
+.menu li{
+  display:inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  /*border: 1px solid #000;*/
+  }
+
+/*21*/
+.menu li :hover{
+
+  padding: 10px;
+  /*margin-top: 10px;*/
+  border: 1px solid #666;
+
 }
+
+/*12*/
+.menu li a{
+    color: #666;
+}
+
+/*20*/
+.menu .menu--active {
+  color: #000;
+}
+
+
+
+
+
+.menu-call{
+  padding: 10px;
+  background-color: #ffe184;
+}
+.menu-call:hover{
+  background-color: #ffecb2;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.page-nav {
+  min-height: clear fix;
+}
+
+.page-nav a{
+  text-decoration: none;
+}
+
+.logo b{
+  font-size: 24px;
+  color: #000;
+  margin: 15px;
+  display: inline-block;
+vertical-align: middle;
+}
+
+.logo img{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+/*ИЗ ДС БИН*/
+
+
+
+
+
+
+
+
+
+
+
+.promo strong{
+font-style: 44px;
+}
+
+
+
+
 .catalog-item{
   display: inline-block;
   border: 1px solid #000;
@@ -46,18 +140,120 @@
   margin: 0 auto;
   width: 90%;
   }
+.about-numbers{
+/*  display: inline-block;*/
+}
+
+.advantages-item{
+  width: 16%;
+  display: inline-block;
+  margin-left: 70px;
+}
 
 .reviews
 {
   display: inline-block;
   vertical-align: top;
 }
-.about-numbers{
+.reviews-title, .about-title{
+  font-size: 24px;
+  font-weight: bold;
+}
+.reviews-pic{
+  display: inline-block;
+
+}
+
+.inline li{
   display: inline-block;
 }
-/*что за ботько*/
-.advantages-item{
-  width: 16%;
+.portfolio-cart{
   display: inline-block;
-  margin-left: 70px;
+  background-color: white;
+  padding: 30px;
+  margin: 30px;
+}
+.portfolio-item--wood{
+  background-image: url(../img/house.jpg);
+}
+.portfolio-item--house{
+  background-image: url(../img/house.jpg);
+}.portfolio-item--flor{
+  background-image: url(../img/house.jpg);
+}
+.portfolio-item{
+  min-height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.contacts-bar__map{
+  background-color: pink;
+  width: 60%;
+  height: 300px;
+  display: inline-block;
+}
+.contacts-bar__form{
+  display: inline-block;
+  vertical-align: top;
+}
+.contacts-reviews__item{
+  width: 24%;
+  display: inline-block;
+}
+.contacts-reviews__pic img{
+  border: 0px solid black;
+  border-radius: 50px;
+
+}
+.catalog-list{
+  display: block;
+  float: left;
+  width: 75%;
+
+}
+.catalog-item{
+display: inline-block;
+background-color: white;
+padding: 10px 20px;
+border: 1px solid #000;
+}
+
+.catalog-menu{
+  width: 25%;
+  display: block;
+  float: left;
+}
+.catalog-item__box{
+  margin: 0 auto;
+}
+.catalog-item__title{
+  font-size: 21px;
+  
+}
+
+.catalog-item__price{
+  font-family: PT Sans Bold;
+  font-size: 27px;
+  
+}
+.catalog-item__pic{
+padding-left: 38px;
+}
+.catalog-item__btn{
+  text-decoration: none;
+  padding: 10px 20px;
+  color: white;
+  
+
+}
+.catalog-item__btn--blue{
+background-color: #354b60;
+font-size: 16px;
+}
+.catalog-item__btn--yellow{
+  background-color: #f3c331;
+  font-size: 16px;
 }
