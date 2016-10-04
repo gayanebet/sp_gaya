@@ -106,19 +106,105 @@ vertical-align: middle;
 
 /*ИЗ ДС БИН*/
 
+/*И ЧЕ ТЕПЕРЬ ДЕЛАТЬ?*/
 
+/*.promo:before{
+  width: 100%;
+  height: 13px;
+  border: 1px solid #000;
+  background-size: 25px 13px;
 
+  background-repeat: repeat-x;
+  background-image: linear-gradient(135deg, #ffcd34 35%, #000 35%, #000 65%, #ffcd34 65%)
+}*/
 
-
-
-
-
-
-
-
-.promo strong{
-font-style: 44px;
+.promo:before{
+content:"";
+position: absolute;
+left: 0;
+top: -15px;
+width: 100%;
+height: 20px;
+background-image: 
+linear-gradient(135deg, #ffcd34 35%, #000 35%, #000 65%, #ffcd34 65%);
+background-size: 35px 15px;
+background-repeat: repeat-x;
 }
+
+
+
+.promo .container{
+ background-image: url(../img/bgrpromo.jpg);
+  background-position:center;
+  height: 460px;
+}
+
+.promo-title{
+  color: white;
+  font-size: 44px;
+  padding-top: 130px;
+    display: inline-block;
+}
+
+.promo-text{
+  font-size: 18px;
+  max-width: 700px;
+  display: inline-block;
+ padding: 10px 0;
+  color: white;
+  /*font-weight: lighter;*/
+
+}
+
+.promo-btn{
+  border: 2px solid #ffcd34;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+padding: 5px 30px;
+  }
+
+.consultat{
+  background-color: #202e3b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
