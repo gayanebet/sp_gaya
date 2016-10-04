@@ -36,18 +36,20 @@ footer{
 
 .menu li{
   display:inline-block;
-  padding: 10px;
-  margin-top: 10px;
+  /*padding: 10px;*/
+  margin: 20px 10px;
   /*border: 1px solid #000;*/
+  float: right;
+/*   float */
   }
 
 /*21*/
 .menu li :hover{
-
+ /*box-sizing: border-box;*/
   padding: 10px;
-  /*margin-top: 10px;*/
+  margin: 0 -11px;
   border: 1px solid #666;
-
+  color: black;
 }
 
 /*12*/
@@ -60,14 +62,16 @@ footer{
   color: #000;
 }
 
-
-
-
-
 .menu-call{
   padding: 10px;
   background-color: #ffe184;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+  float: right;
+  
 }
+
 .menu-call:hover{
   background-color: #ffecb2;
 }
