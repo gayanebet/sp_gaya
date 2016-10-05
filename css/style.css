@@ -144,12 +144,13 @@ background-repeat: repeat-x;
 .promo .container{
 
   height: 460px;
+  padding-top: 130px;
 }
 
 .promo-title{
   color: white;
   font-size: 44px;
-  padding-top: 130px;
+
     display: inline-block;
 }
 
@@ -157,19 +158,24 @@ background-repeat: repeat-x;
   font-size: 18px;
   max-width: 700px;
   display: inline-block;
- padding: 10px 0;
+ padding: 10px 0 30px 0px;
   color: white;
+  width: 620px;
   /*font-weight: lighter;*/
 
 }
 
-.promo-btn{
+.promo-btn {
   border: 2px solid #ffcd34;
   font-size: 18px;
   text-decoration: none;
   color: white;
-padding: 5px 30px;
-  }
+}
+.promo-btn-el{
+  background-image: url(../img/btnel.png)
+  background-repeat:no-repeat;
+
+}
 
 .consultat{
   background-color: #202e3b;
@@ -180,19 +186,27 @@ padding: 5px 30px;
   font-size: 24px;
   margin-top: 30px;
   margin-bottom: 15px;
+
 }
 
 .consult-form__text{
   background-color: #202e3b;
   font-size: 16px;
-}
-
-.consult-form__text{
   border-color: #ffcd34;
   margin-top: 10px;
   margin-right: 15px;
   padding: 15px 15px;
-  width: 21%
+  width: 220px;
+  /*color: red !important*/
+}
+.consult-form__date{
+  background-color: #202e3b;
+  font-size: 16px;
+  border-color: #ffcd34;
+  margin-top: 10px;
+  margin-right: 15px;
+  padding: 15px 15px;
+  width: 220px;
   /*color: red !important*/
 }
 
@@ -200,8 +214,8 @@ padding: 5px 30px;
 background-color: #ffcd34;
 padding: 19px ;
 border: 0px solid ;
-
-
+width: 220px;
+font-style: bold;
 }
 
 .consult-form {
@@ -520,7 +534,7 @@ cite{
   text-decoration: none;
 }
 
-.logo b{
+.logo-footer b{
   font-size: 24px;
   color: #f1b132;
   margin: 15px;
@@ -528,7 +542,7 @@ cite{
 vertical-align: middle;
 }
 
-.logo img{
+.logo-footer img{
   display: inline-block;
   vertical-align: middle;
 }
@@ -682,6 +696,7 @@ border: 1px solid #000;
 }
 .catalog-item__pic{
 padding-left: 38px;
+
 }
 .catalog-item__btn{
   text-decoration: none;
