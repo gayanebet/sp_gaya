@@ -31,10 +31,10 @@
 <!-- ЗАчем клеарфикс снизу clearfix-->
 <div class="contacts-subheader clearfix">
   <div class="container">
-    <div class="left ">
+    <!-- <div class="left"> -->
       <h1 class="contacts-subheader__title">Контакты</h1>
       <p class="contacts-subheader__description">Свяжитесь с нами и всё будет хорошо</p>
-    </div>
+    <!-- </div> -->
     <div class="right">
       <a href="" class="contacts-subheader__btn">Мне нужна консультация</a>
     </div>
@@ -47,22 +47,22 @@
       <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=4jgwofVn4ABiA0JLYyHhsDqdVQfe4ORs&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
     </div>
     <div class="contacts-bar__form">
-      <div class="contacts-bar__form__pic-phone"><img src="http://placehold.it/10x10" alt=""></div>
-      <strong class="contacts-bar__form__phone">+7 (812) 212 87 65</strong>
-      <div class="contacts-bar__form__pic-mail"><img src="http://placehold.it/10x10" alt=""></div>
+      <!-- <div class="contacts-bar__form__pic-phone"></div> -->
+      <a class="contacts-bar__form__phone" href="tel:+79994445566">+7 (812) 212 87 65</a>
+      <a class="contacts-bar__form__mail" href="mailto:rent@sptech.ru">rent@sptech.ru</a>
+      <!-- <strong class="contacts-bar__form__phone">+7 (812) 212 87 65</strong> -->
+      <!-- <div></div> -->
+      <!-- <div class="contacts-bar__form__pic-mail"></div> -->
+        <!-- <strong class="contacts-bar__form__mail">rent@sptech.ru</strong> -->
+        <p class="contacts-bar__form__comment-form">Закажите консультацию по подбору подходящей техники:</p>
       
-        <strong class="contacts-bar__form__mail">rent@sptech..ru</strong>
-      
-      
-        <p class="contacts-bar__form__comment-form">Закажите консультацию по подбору техники:</p>
-      
-      <form action="">
+      <form class="contacts-form" action="">
         <input type="text" value="Имя"><br>
         <input type="text" value="Телефон для связи"><br>
-        <input type="text" value="Описание задачи"><br>
-        <input type="submit" value="Заказать консультацию">
+        <input calss="contacts-form--description" type="text" value="Описание задачи"><br>
+        <input calss="contacts-form__btn" type="submit" value="Получить консультацию">
       </form>
-      <a href="" class="contacts-bar__form__btn"></a></div>
+      
     </div>
   </div>
 </div>
@@ -72,30 +72,32 @@
     
       <h2 class="contacts-title">Отзывы</h2>
     <div class="contacts-reviews__item center ">
-    <div class="contacts-reviews__pic"><img src="http://placehold.it/100x100" alt=""></img></div>
+    <div class="contacts-reviews__pic"><img src="img/reviewface1.jpg" alt=""></img></div>
     <div class="contacts-reviews__text">
-      <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, quas?<br><cite>Lorem ipsum.</cite></blockquote>
+      <blockquote>Спецтех24 – это надежные партнеры нашей компании, которые всегда выполняют работу быстро и еще у них отличное чувство юмора! Благодарим и рекомендуем.<cite>Оля Молния</cite></blockquote>
     </div>
     </div>
 
     <div class="contacts-reviews__item center ">
-    <div class="contacts-reviews__pic"><img src="http://placehold.it/100x100" alt=""></img></div>
+    <div class="contacts-reviews__pic"><img src="img/reviewface2.jpg" alt=""></img></div>
     <div class="contacts-reviews__text">
-      <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, quas?<br><cite>Lorem ipsum.</cite></blockquote>
+      <blockquote>Спецтех24 – это надежные партнеры нашей компании, которые всегда выполняют работу быстро и еще у них отличное чувство юмора! Благодарим и рекомендуем.
+<cite>Оля Молния</cite></blockquote>
     </div>
     </div>
 
     <div class="contacts-reviews__item center ">
-    <div class="contacts-reviews__pic"><img src="http://placehold.it/100x100" alt=""></img></div>
+    <div class="contacts-reviews__pic"><img src="img/reviewface3.jpg" alt=""></img></div>
     <div class="contacts-reviews__text">
-      <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, quas?<br><cite>Lorem ipsum.</cite></blockquote>
+      <blockquote>Спецтех24 – это надежные партнеры нашей компании, которые всегда выполняют работу быстро и еще у них отличное чувство юмора! Благодарим и рекомендуем.<cite>Оля Молния</cite></blockquote>
     </div>
     </div>
 
     <div class="contacts-reviews__item center">
-    <div class="contacts-reviews__pic"><img src="http://placehold.it/100x100" alt=""></img></div>
+    <div class="contacts-reviews__pic"><img src="img/reviewface4.jpg" alt=""></img></div>
     <div class="contacts-reviews__text">
-      <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, quas?<br><cite>Lorem ipsum.</cite></blockquote>
+      <blockquote>Спецтех24 – это надежные партнеры нашей компании, которые всегда выполняют работу быстро и еще у них отличное чувство юмора! Благодарим и рекомендуем. 
+      <cite>Оля Молния</cite></blockquote>
     </div>
     </div>
 </div>
@@ -103,19 +105,21 @@
 
 
 
-  <footer class="page-nav">
+<footer class="page-nav">
     <div class="container clearfix">
-      <a href="" class="logo left"><img src="http://placehold.it/40x40" alt=""></a>
-      <nav class="menu right">
+      <a href="" class="logo-footer left">
+        <img src="img/logo2.png" alt=""><b>СпецТех24</b>
+      </a>
+      <nav class="menu-footer">
+        <a  class="menu-footer__call" href="">Заказать звонок</a>
         <ul>
-          <li><a href="index.html">О компании</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="portfolio.html">Портфолио</a></li>
           <li><a href="contacts.html">Контакты</a></li>
-          <li><a href="">Заказать звонок</a></li>
+          <li><a href="portfolio.html">Портфолио</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="index.html">О компании</a></li>
         </ul>
       </nav>
     </div>
-  </footer>
+</footer>
 </body>
 </html>
