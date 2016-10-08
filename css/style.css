@@ -94,12 +94,14 @@ vertical-align: middle;
   background-position:center;
   background-size: cover;
   position: relative;
+  min-width: 960px;
 }
 .promo:before{
-content:"df";
+content:"";
 position: absolute;
 left: 0;
 width: 100%;
+min-width: 960px;
 height: 10px;
 background-image: 
 linear-gradient(135deg, #ffcd34 35%, #000 35%, #000 65%, #ffcd34 65%);
@@ -140,11 +142,13 @@ background-repeat: repeat-x;}
   top: 5px;
   right: 20px;
   font-size: 30px;
+
 }
 
 .consultat{
   background-color: #202e3b;
   position: relative;
+  min-width: 960px;
 }
 .consultat:before{
 content:"";
@@ -156,6 +160,7 @@ background-image:
 linear-gradient(135deg, #ffcd34 35%, #000 35%, #000 65%, #ffcd34 65%);
 background-size: 28px 18px;
 background-repeat: repeat-x;
+min-width: 960px;
 }
 .consult-title{
     color: #ffcd34;
@@ -257,10 +262,12 @@ display: inline-block;
 .main-price{
   background-color: #f3f3f3;
   padding: 40px 0;
+  min-width: 960px;
 }
 .price{
   width: 220px;
   margin-right: 20px;
+
 }
 .price-title{
   font-size: 26px;
@@ -305,6 +312,7 @@ background-color: #ffffff;
   color: white;
   padding: 40px 0;
   position: relative;
+  min-width: 960px;
 }
 .about:before{
 content:"";
@@ -372,6 +380,7 @@ font-style: italic;
 }
 .index-map{
   position: relative;
+  min-width: 960px;
 }
 .index-map:before{
 content:"";
@@ -524,6 +533,7 @@ background-repeat: no-repeat;
 background-position: center;
 overflow: hidden;
 background-size: cover;
+min-width: 960px;
 }
 .portfolio-title{
   color: #ffcd34;
@@ -535,6 +545,7 @@ display: inline-block;
 
 .portfolio-item{
   position: relative;
+  min-width: 960px;
 }
 .portfolio-item:before{
 content:"";
@@ -773,6 +784,7 @@ margin-top: 15px;
 .catalog{
   background-color: #f3f3f3;
   padding-top: 30px;
+  min-width: 960px;
 }
 .catalog-subheader{
   background-image: url(../img/bgrcatalog.jpg);
@@ -780,6 +792,7 @@ margin-top: 15px;
   overflow: hidden;
   /*position: relative;*/
   box-sizing: border-box;
+  min-width: 960px;
 }
 .catalog-subheader--left{
   /*position: absolute;*/
@@ -843,21 +856,6 @@ margin-top: 15px;
 .catalog-description{
   color: white;
   margin-top: 10px;
-}
-
-.catalog-item{
-/*display: inline-block;*/
-
-background-color: white;
-padding: 28px 28px;
-/*border: 1px solid pink;*/
-width: 300px;
-height: 400px;
-margin: 0 0px 20px 10px;
-  display: inline-block;
-}
-.catalog-item:nth-of-type(2n+1){
-margin: 0 10px 20px 0;
 }
 
 
@@ -952,9 +950,31 @@ top: -3px;
 
 .catalog-item__price{
 
-  font-size: 27px;
+  font-size: 22px;
   margin-bottom: 20px;
+  display: inline-block;
+  font-weight: 700;
 }
+.catalog-item__currency{
+  display: inline-block;
+  font-size: 18px;
+  margin-left: 10px;
+  font-weight: 700;
+
+}
+.catalog-item__price--old{
+
+  font-size: 22px;
+  margin-bottom: 20px;
+  display: inline-block;
+  font-weight: 700;
+  color: red;
+  margin-right: 10px;
+  /*text-decoration: line-through;*/
+  position: relative;
+}
+
+
 .catalog-item__pic{
 margin-left: 10px;
 margin-bottom: 32px;
@@ -972,9 +992,62 @@ font-size: 16px;
   background-color: #f3c331;
   font-size: 16px;
 }
+/*ШШШШШШШШШШШШШШШШШШШШШШШШШШШШШШШШШШШШШШШШШШШШШШШШШШШШШШ -->
+
+*/
+.catalog-item{
+/*display: inline-block;*/
+overflow: hidden;
+background-color: white;
+padding: 28px 28px;
+/*border: 1px solid pink;*/
+width: 300px;
+height: 400px;
+margin: 0 0px 20px 10px;
+  display: inline-block;
+
+}
+
+.catalog-item:nth-of-type(2n+1){
+margin: 0 10px 20px 0;
+}
 
 .catalog-item--sale{
+  position: relative;
+  overflow: hidden;
+}
+.catalog-item--sale:before{
 
+  position: absolute;
+  content: "sale";
+  font-size: 16px;
+  background-color: #d12222;
+font-weight: 700;
+color: white;
+ transform: rotate(45deg);
+ top: 10px;
+ right: -30px;
+ width: 100px;
+ text-align: center;
+}
+..catalog-item--new{
+  position: relative;
+  overflow: hidden;
+
+}
+.catalog-item--new:before{
+
+    position: absolute;
+  content: "new";
+  font-size: 16px;
+  background-color: #00c22e;
+font-weight: 700;
+color: white;
+ transform: rotate(45deg);
+ top: 800px;
+ right: -30px;
+ width: 100px;
+ text-align: center;
 }
 
 .catalog-list__nav li a{
@@ -1019,6 +1092,7 @@ color: white !important;
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 0px;
+  min-width: 960px;
 }
 .catalog-item__specadvice{
   background-color: white;
@@ -1026,6 +1100,7 @@ color: white !important;
   width: 300px;
   height: 400px;
   display: inline-block;
+  overflow: hidden;
  
 }
 .catalog-item__specadvice:nth-child(3){
