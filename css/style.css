@@ -581,9 +581,17 @@ background-repeat: repeat-x;}
   text-decoration: none;
   color: black;
   padding: 10px 40px 10px 15px;
-
+  font-weight: 700;
+  position: relative;
 }
-
+.portfolio-item__btn:before{
+  content: ">";
+  position: absolute;
+  font-weight: 700;
+  font-size: 28px;
+  top: 0px;
+  right: 10px;
+}
 
 
 
