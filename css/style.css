@@ -1030,7 +1030,7 @@ color: white;
  width: 100px;
  text-align: center;
 }
-..catalog-item--new{
+.catalog-item--new{
   position: relative;
   overflow: hidden;
 
@@ -1044,10 +1044,12 @@ color: white;
 font-weight: 700;
 color: white;
  transform: rotate(45deg);
- top: 800px;
+ top: 8px;
  right: -30px;
  width: 100px;
+ /*height: 30px;*/
  text-align: center;
+ padding: 5px 0 5px 0;
 }
 
 .catalog-list__nav li a{
