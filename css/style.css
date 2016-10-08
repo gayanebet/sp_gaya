@@ -66,6 +66,7 @@ footer{
 }
 .page-nav {
   min-height: clear fix;
+    min-width: 960px;
 }
 .page-nav a{
   text-decoration: none;
@@ -386,6 +387,7 @@ background-repeat: repeat-x;
 }
 .menu-footer{
   overflow: hidden;
+
 }
 .menu-footer li{
   display:inline-block;
@@ -612,6 +614,7 @@ background-repeat: repeat-x;}
 .contacts-subheader{
   background-image: url(../img/bgrcontacts.jpg);
   height: 105px;
+  min-width: 960px;
 
 }
 .contacts-subheader__title{
@@ -636,12 +639,14 @@ background-repeat: repeat-x;}
   padding: 15px;
   display: inline-block;
   margin-top: 25px;
+  font-weight: 700;
 }
 
 .contacts-bar{
   background-color: #f3f3f3;
   padding: 40px 0 50px 0;
   overflow: hidden;
+    min-width: 960px;
 }
 .contacts-bar__map{
   width: 620px;
@@ -684,6 +689,7 @@ font-size: 18px;
 text-decoration: none;
 color: #000;
 margin-bottom: 20px;
+font-weight: 700;
 }
 .contacts-bar__form__mail{
   /*padding: 20px;*/
@@ -692,27 +698,42 @@ margin-bottom: 20px;
   font-size: 18px;
   text-decoration: none;
   color: #000;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
+  font-weight: 700;
   /*margin: 5px 0;*/
 }
 
 .contacts-bar__form__comment-form{
   font-size: 16px;
+
 }
 .contacts-form input{
   width: 100%;
   height: 40px;
   margin-top: 10px;
   color: #999;
+  padding-left: 10px;
 }
-.contacts-form input:nth-of-type(3){
+.contacts-form textarea{
+  display: block;
+  
   height: 96px;
+  padding: 10px;
+  font-family: 'PT sans';
+  font-size: 14px;
+  resize: none;
+  margin: 10px 0px 0px 0px; width: 300px; height: 96px;
+
+
 }
+
 .contacts-form input:last-child{
 height: 45px;
 background-color: #354b60;
 color: white;
 border: none;
+padding-left: 0;
+margin-top: 0;
 }
 .contacts-title{
   font-size: 26px;
@@ -720,12 +741,11 @@ border: none;
   margin-bottom: 20px;
 }
 .contacts-reviews{
-  padding: 37px 0 60px 0;
+  padding: 37px 0 0px 0;
 }
 .contacts-reviews__item{
   width: 220px;
-  display: inline-block;
-
+  display: inline-table;
 }
 .contacts-reviews__pic img{
   border: 0px solid black;
@@ -744,6 +764,9 @@ margin-top: 26px;
 .contacts-reviews__text cite{
   color: #202e3b;
 display: inline-block;
+font-weight: 700;
+font-style: normal;
+margin-top: 15px;
 } 
 
 
